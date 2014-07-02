@@ -55,12 +55,15 @@ def fetchstream():
   url = "https://stream.twitter.com/1/statuses/sample.json"
   parameters = []
   response = twitterreq(url, "GET", parameters)
+  # for line in response:
+  #   print line.strip()
   if response:
     f = open('output.txt','wb')
     try:
       for line in response:
         print line.strip()
         f.write(line.strip())
+        f.write('\n')
     except:
       f.close()
   else:
@@ -84,10 +87,12 @@ def fetchsearched():
       for line in response:
         print line.strip()
         f.write(line.strip())
+        f.write('\n')
     except:
       f.close()
   else:
     quit("\nGot no response!")
+
       
 if __name__ == '__main__':
   try:
@@ -101,3 +106,4 @@ if __name__ == '__main__':
     fetchsearched()
   else:
     quit("\nWrong choice!")
+

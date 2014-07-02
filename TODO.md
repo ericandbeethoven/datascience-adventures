@@ -1,8 +1,9 @@
 - [ ] assignment 1
   - [x] add sample output.txt
-  - [x] upgrade twitter stream / search API script
+  - [x] upgrade and complete twitter stream / search API script
   - [x] add problem_1_submission.txt
-  - [ ] execute twitter_sentiment
+  - [x] add sample AFINN read code
+  - [x] upgrade and complete twitter_sentiment script
   - [ ] execute term_sentiment
 
 - [ ] assignment 2

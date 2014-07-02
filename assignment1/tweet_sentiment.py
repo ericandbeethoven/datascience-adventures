@@ -1,17 +1,38 @@
 import sys
-
-def hw():
-    print 'Hello, world!'
-
-def lines(fp):
-    print str(len(fp.readlines()))
+import json
+import string
+import unicodedata
 
 def main():
-    sent_file = open(sys.argv[1])
-    tweet_file = open(sys.argv[2])
-    hw()
-    lines(sent_file)
-    lines(tweet_file)
+    """ 
+    read AFINN classified mood file and tweet dumps,
+    classify tweet sentiments and produce new output.
+    """
+    afinnfile = open(sys.argv[1]) #AFINN first
+    tweet_file = open(sys.argv[2]) #tweet dump second arg
 
+    scores = {} # initialize an empty dictionary
+    for line in afinnfile:
+      term, score  = line.split("\t")  # The file is tab-delimited. "\t" means "tab character"
+      scores[term] = int(score)  # Convert the score to an integer.
+
+    table = string.maketrans("","") # step 1 of removing punctuations      
+    final = []
+    for line in tweet_file:
+        temp = json.loads(line.strip())
+        try:
+            sentence = unicodedata.normalize('NFKD', temp['text']).encode('ascii','ignore')
+            words = ' '.join(sentence.translate(table, string.punctuation).split()).split()
+            filtered = list(set(scores.keys()) & set([x.lower() for x in words]))
+            sentiment = sum([scores[x] for x in filtered])
+            # if sentiment:
+            #     print sentiment, filtered
+            # else:
+            #     print sentiment
+            print sentiment
+        except:
+            print 0
+            #continue
+            #raise
 if __name__ == '__main__':
     main()
