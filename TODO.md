@@ -9,7 +9,7 @@
 - [ ] assignment 3
 - [ ] cloud quiz
 
--[ ] add examples to dumps
+- [ ] add examples to dumps
   - [x] anscombe's quartet.R  
   - [x] intro.R  
   - [x] Rplots.pdf  
