@@ -15,4 +15,6 @@ Assignment 1
 
 * AFINN-111.txt : Pre-classified set of words, scored on basis of sentiments.
 
+* frequency.py : Calculate Term-Frequency for each term in all tweets
+
 

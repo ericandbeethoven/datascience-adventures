@@ -5,7 +5,7 @@
   - [x] add sample AFINN read code
   - [x] upgrade and complete twitter_sentiment script
   - [x] execute term_sentiment
-  - [ ] frequency.py
+  - [x] frequency.py
   - [ ] happiest_state.py
   - [ ] top_ten.py
 
