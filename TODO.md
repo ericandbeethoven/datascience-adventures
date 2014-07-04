@@ -4,7 +4,10 @@
   - [x] add problem_1_submission.txt
   - [x] add sample AFINN read code
   - [x] upgrade and complete twitter_sentiment script
-  - [ ] execute term_sentiment
+  - [x] execute term_sentiment
+  - [ ] frequency.py
+  - [ ] happiest_state.py
+  - [ ] top_ten.py
 
 - [ ] assignment 2
 - [ ] assignment 3
