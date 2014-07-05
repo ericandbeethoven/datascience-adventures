@@ -19,4 +19,5 @@ Assignment 1
 
 * happiest_state.py : print the state code of happiest US state.
 
+* top_ten.py : script to find top ten frequently used hashtags
 
