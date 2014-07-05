@@ -6,7 +6,7 @@
   - [x] upgrade and complete twitter_sentiment script
   - [x] execute term_sentiment
   - [x] frequency.py
-  - [ ] happiest_state.py
+  - [x] happiest_state.py
   - [ ] top_ten.py
 
 - [ ] assignment 2
