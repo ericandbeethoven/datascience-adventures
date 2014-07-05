@@ -1,4 +1,15 @@
 # http://econym.org.uk/gmap/states.xml <- polygon based coordinates of the US states.
+"""
+This script measures the happiness of US states based on 
+supplied tweet stream and a pre-analysed sentiment dictionary.
+
+Usage:
+
+$ python happiest_state.py AFINN-111.txt output.txt
+
+Sample Output:
+  TX
+"""
 
 import sys
 import json
@@ -57,13 +68,17 @@ def main():
     """
     Return the state code of the happiest US state
     """
+    # extract necessary data from tweet objects
     extracted = filter_tweets(open(sys.argv[2]))     
+    # execute sentiment analyzer on the tweet objects; add scores
     scored_tweets = extract_sentiments(open(sys.argv[1]), extracted)
+    # sort tweets according the scores and filter US based tweets only.
     tweets_US = sorted(
         [x for x in filter(None,scored_tweets) if x['code'] == 'US'],
         key=itemgetter('score')#, reverse = True
     )
 
+    # determine the state code through geocoded data.
     try:
         if tweets_US[-1]['state'][1] in states.keys(): 
             print tweets_US[-1]['state'][1]

@@ -1,3 +1,20 @@
+"""
+Produces sentiments per tweet.
+
+Usage:
+$ python tweet_sentiment.py AFINN-111.txt  output2.txt  
+
+Sample output:
+    -3
+    0
+    0
+    -1
+    0
+    6
+    0
+    3
+"""
+
 import sys
 import json
 import string

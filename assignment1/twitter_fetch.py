@@ -1,3 +1,31 @@
+""" 
+Menu-driven program to fetch tweets
+based on option selected by the user.
+Options:
+1. Twitter Stream API
+2. Twitter Search API
+
+Usage:
+$ python twitter_fetch.py
+
+Sample output:
+--------------
+1: Twitter Stream API
+2: Twitter Search API
+Enter choice(1/2): 2
+Enter search terms: Neymar
+Enter result count: 1
+......
+......
+{"statuses":[{"metadata":{"result_type":"recent",.........................
+"id":485514266548531200,"id_str":"485514266548531200",....................
+"text":"RT @8Fact_Footballl: Neymar: \"They took away my dream of playing 
+a World Cup final, but the dream of becoming world champion didn't end.\"",
+"source":"\u003ca href=\"http:\/\/tapbots.com\/tweetbot\" ...............
+......
+......
+"""
+
 import oauth2 as oauth
 import urllib2 as urllib
 import os
@@ -17,7 +45,6 @@ oauth_consumer = oauth.Consumer(key=api_key, secret=api_secret)
 signature_method_hmac_sha1 = oauth.SignatureMethod_HMAC_SHA1()
 
 http_method = "GET"
-
 
 http_handler  = urllib.HTTPHandler(debuglevel=_debug)
 https_handler = urllib.HTTPSHandler(debuglevel=_debug)
