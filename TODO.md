@@ -10,6 +10,9 @@
   - [x] top_ten.py
 
 - [ ] assignment 2
+  - [ ] Part 1 - f
+  - [ ] Part 2
+
 - [ ] assignment 3
 - [ ] cloud quiz
 
