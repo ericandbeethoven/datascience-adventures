@@ -1,0 +1,5 @@
+- [ ] add examples to dumps
+  - [x] anscombe's quartet.R  
+  - [x] intro.R  
+  - [x] Rplots.pdf  
+  - [x] url_readlines_kmeans.R
