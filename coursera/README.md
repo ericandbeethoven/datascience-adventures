@@ -6,10 +6,6 @@ datascience practice material
 
 ### Updates
 
-* dumps/ contains R based introductory scripts, anscombe's quartet, k-means, ..
-
-***
-
 Data Science Intro
 
 (datasci-002)
