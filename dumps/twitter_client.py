@@ -94,3 +94,23 @@ if __name__=='__main__':
         
     # for follower in followers:
     #     print follower.name        
+
+
+###############
+# Sample Output
+###############
+
+# : Archit । अर्चित
+# -------------------------
+# Handle: arcolife
+# -------------------------
+# Description: नमस्ते। I'm on a quest for an answer to nature's existence, wishing to be an intergalactic hitchhiker | associate SE @RedHatSoftware | वन्दे मातरम।
+# -------------------------
+# Website: http://t.co/hMjNjIAYqu
+# -------------------------
+# Followers Count: 222
+# -------------------------
+# Location: India
+# -------------------------
+# Time Zone: New Delhi
+# -------------------------
