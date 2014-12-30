@@ -100,11 +100,11 @@ if __name__=='__main__':
 # Sample Output
 ###############
 
-# : Archit । अर्चित
+# : Archit 
 # -------------------------
 # Handle: arcolife
 # -------------------------
-# Description: नमस्ते। I'm on a quest for an answer to nature's existence, wishing to be an intergalactic hitchhiker | associate SE @RedHatSoftware | वन्दे मातरम।
+# Description: I'm on a quest for an answer to nature's existence, wishing to be an intergalactic hitchhiker | associate SE @RedHatSoftware
 # -------------------------
 # Website: http://t.co/hMjNjIAYqu
 # -------------------------
