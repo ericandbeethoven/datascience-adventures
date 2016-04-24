@@ -1,0 +1,14 @@
+parameters (0zero,01)
+
+Model and Cost function:
+- linear regression
+       - hypothesis
+       	 h(x) -> size of house x
+       - cost function
+       	 J(0zero,01)): controls the slope of a straight line 
+
+Parameter learning: 
+- gradient descent
+	 - learning rate
+	 - repeat until convergence
+
